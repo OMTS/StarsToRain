@@ -1,20 +1,30 @@
 # StarsToRain
-Simple Python script that exports all Github Stars for a given user into an HTML file importable by Raindrop.io
+
+Python script that exports all Github Stars for a given user into an HTML file importable by Raindrop.io
 
 ## Installation and Usage
-Start by cloning this repo.
 
-This Python script uses [PyGitHub](https://github.com/PyGithub/PyGithub) as a dependency for calling the Github API v3, so first run the following command line:
+Installation/running the script has been verified with Python 3.8.6.
 
-```bash
-sudo pip install -r requirements.txt
+1. Clone this repo
+2. Set up a virtual environment:
+
+```
+python3 -m venv venv && source venv/bin/activate
 ```
 
-Once all dependencies are fetched you can use the script:
+3. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the script:
 
 ```bash
 python starsToRain.py
 ```
 
-You will be prompted for your Github username and password.
-Once the script is done doing the export you'll find your html file into the output directory.
+You will be prompted for your Github username and password. If you're using two-factor authentication, you may need to set up a [Github token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) (it only requires user-level permissions).
+
+Once the script is done doing the export you'll find your html file in the `output` directory.
