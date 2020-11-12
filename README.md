@@ -25,6 +25,6 @@ pip install -r requirements.txt
 python starsToRain.py
 ```
 
-You will be prompted for your Github username and password.
+You will be prompted for your Github username and password. If you're using two-factor authentication, you may need to set up a [Github token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) (it only requires user-level permissions).
 
 Once the script is done doing the export you'll find your html file in the `output` directory.
