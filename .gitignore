@@ -102,3 +102,7 @@ ENV/
 
 # output directory
 /output
+
+# IDE-related things
+.idea/
+.vscode/
